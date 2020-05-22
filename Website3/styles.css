@@ -1,0 +1,24 @@
+body{
+	margin: 0;
+	font-family: Ariel;
+	background: #333;
+	color: #fff;
+	font-size: 1.1em;
+	line-height: 1.5;
+	text-align: center;
+}
+
+.grid-item:hover {
+	background: #eaeaea;
+    color: black;
+}
+    
+.grid-item {
+    display: inline-block;
+    background: #333;
+    color: white;
+    text-decoration: none;
+    padding: 1em 2em;
+    border: 1px solid #666;
+    margin: .5em 0;
+}
