@@ -15,17 +15,30 @@
 <body>
 
   <div class="grid-container">
-    <div class="grid-item" id=demo onclick="myFunction()">1</div>
-    <div class="grid-item">2</div>
-    <div class="grid-item">3</div>  
+    <div class="grid-item" id="red_box" onclick="text_reveal_red()"> </div>
+    <div class="grid-item" id="yellow_box" onclick="text_reveal_yellow()"> </div>
+    <div class="grid-item" id="blue_box" onclick="text_reveal_blue()"> </div>  
   </div>
 
   <script>
-    function myFunction() {
-    document.getElementById("demo").innerHTML = "Hello World";
+    function text_reveal_red() {
+    document.getElementById("red_box").innerHTML = "Walked";
+    }
+    function text_reveal_yellow() {
+    document.getElementById("yellow_box").innerHTML = "Walk";
+    }
+    function text_reveal_blue() {
+    document.getElementById("blue_box").innerHTML = "Will walk";
     }
   </script>
     
 </body>
 
+<footer>
+  <div>
+    <div class="grid-container">
+      <div class="grid-item-bot" id="prev"> Prev </div>
+      <div class="grid-item-bot" id="next"> Next </div>
+  </div>
+</footer>
 </html>

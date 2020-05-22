@@ -1,24 +1,72 @@
 body{
-	margin: 0;
 	font-family: Ariel;
-	background: #333;
-	color: #fff;
+    background: #ffffff;
+    background-image: url(img/Kuplogo.png), linear-gradient(#fff,#e6782d);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right bottom, center;
+	color: #000000;
 	font-size: 1.1em;
 	line-height: 1.5;
-	text-align: center;
+    text-align: center;
+    width: auto;
+    height: 100%;
+    margin: 0;
+   
+}
+
+html{
+    height: 100%
 }
 
 .grid-item:hover {
-	background: #eaeaea;
-    color: black;
+	filter: brightness(85%);
 }
     
 .grid-item {
     display: inline-block;
-    background: #333;
-    color: white;
-    text-decoration: none;
     padding: 1em 2em;
-    border: 1px solid #666;
-    margin: .5em 0;
+    border: 1px solid rgb(255, 255, 255);
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+
+   
+}
+
+#red_box {
+    background: #da0d0d;
+}
+
+#blue_box {
+    background: #0b57e4;
+}
+
+#yellow_box {
+    background: #f4f71e;
+}
+
+
+
+.grid-container {
+    justify-items: center;
+    margin: auto;
+    width: auto;
+    padding-top: 25%;
+    vertical-align: middle;
+    
+}
+
+.grid-item-bot {
+    display: inline-block;
+    padding: 1em 2em;
+    border: 1px solid rgb(255, 255, 255);
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+
+   
 }
